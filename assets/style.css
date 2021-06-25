@@ -1,7 +1,39 @@
+
+header {
+  background-color: grey;
+  /* margin-top: -30px; */
+  display: flex;
+  z-index: 1;
+  /* height: 250px; */
+}
+nav{
+  display: flex;
+}
+.navStuff {
+  justify-content: flex-end;
+}
+h1{
+  background-color: lightblue;
+  font-size: 50px;
+  display: inline-flex;
+  z-index: 2;
+
+}
+ul {
+  display: flex;
+  list-style: none;
+  
+}
+li{
+  padding: 10px;
+  display: flex;
+  
+}
 .line {
     border-left: 6px solid green;
-    height: 500px;
-    position: absolute ;
-    margin-left: 10%;
+    display: inline-block;
+    height: 100px;
+    width: 2px;
+    margin-left: 5px;
 
   }
