@@ -1,0 +1,7 @@
+.line {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute ;
+    margin-left: 10%;
+
+  }
