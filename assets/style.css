@@ -1,30 +1,38 @@
-
+body{
+  background-color:#FBFBFB ;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 0.05rem;
+}
 header {
   background-color: salmon;
 }
 .name {
   grid-column: 1/4;
-  grid-row: 1;
+  
 }
 h1 {
   background-color: powderblue;
 }
-.navList {
+.navList{
   grid-column: 5/12;
-  grid-row: 1;
- 
+  
+}
+.row {
+  /* background-color: ivory; */
+  margin: 2rem;
+    font-size: 25px;
+}
+.rowRight{
+  text-align: right;
+}
+.rowCenter {
+  text-align: center;
+}
+.row a, .navFooter a {
+  padding: 1rem;
 }
 
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .grid-header, .name, .navList, .grid-aboutMe, .grid-work, .grid-footer, .aboutMe, .blurb {
-    width: 100%;
 
-  }
-  a {
-    display: block;
-  }
-}
 .hero {
   background-color:pink;
   height: 25px;
@@ -36,20 +44,45 @@ h1 {
 }
 .aboutMe {
   grid-column: 1 /4;
-  grid-row: 1;
+  text-align: right;
 }
 .blurb {
-  grid-column: 5/12;
-  grid-row: 1;
+  grid-column: 5/10;
+  line-height: 1;
 }
-#work {
+.blurbPic {
+  grid-column: 11/12;
+  grid-row:1
+}
+#avatar {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem 0 0.5rem 0;
+
+}
+
+.work {
   grid-column: 1/4;
   grid-row: 1/3;
+  text-align: right;
 }
 .mainImg {
   grid-column: 5/12;
   grid-row: 1;
+  position: relative;
+  border-image: 5px solid #;FFAACC
 }
+.titleTheme {
+  background-color: #FFEEF4;
+  position: absolute;
+  padding: 0 0.5rem 0 0.5rem;
+  border-right: 2rem solid #FFEEF4;
+  color: brown;
+  line-height: 0.1;
+  bottom: 20px;
+
+}
+
 #firstProject, #secondProject, #thirdProject, #fourthProject, #fifthProject {
   width: 100%;
 
@@ -57,24 +90,108 @@ h1 {
 .smallImg{
   grid-column: 5/8;
   grid-row: 2;
+  position: relative;
 }
 .smallImg2 {
   grid-column: 9/12;
   grid-row:2;
+  position: relative;
 }
 .smallImg3 {
   grid-column: 5/8;
   grid-row: 3;
+  position: relative;
 }
 .smallImg4 {
   grid-column: 9/12;
   grid-row: 3;
+  position: relative;
 }
 .contactMe {
   grid-column: 1/4;
   grid-row: 1;
+  text-align: right;
 }
 .navFooter {
   grid-column: 5/12;
-  -ms-grid-row: 1;
+  grid-row: 1;
+}
+img {
+  border: 5px solid #FFEEF4;
+}
+/* beginning of media queres */
+@media  screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .name {
+    grid-column: 1/12;
+    grid-row: 1;
+  }
+  .navList {
+    grid-column: 1/12;
+    grid-row: 2;
+  }
+  .row a, .navFooter a {
+    display: block;
+  }
+  .row {
+    text-align: center;
+  }
+  .aboutMe {
+    grid-column: 1/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .blurb {
+    grid-column: 1/12;
+    grid-row:3;
+    text-align: center;
+    margin: 1rem;
+  }
+  .blurbPic {
+    grid-column: 1/12;
+    grid-row:2;
+    margin: 1rem;
+  }
+
+  .work{
+    grid-column: 1/12;
+    grid-row:1;
+    text-align: center;
+  }
+  .mainImg {
+    grid-column: 2/12;
+    grid-row:2;
+    margin: 1rem;
+  }
+  .smallImg {
+    grid-column: 2/12;
+    grid-row:3;
+    margin: 1rem;
+  }
+  .smallImg2 {
+    grid-column: 2/12;
+    grid-row:4;
+    margin: 1rem;
+  }
+  .smallImg3 {
+    grid-column: 2/12;
+    grid-row:5;
+    margin: 1rem;
+  }
+  .smallImg4 {
+    grid-column: 2/12;
+    grid-row:6;
+    margin: 1rem;
+  }
+
+  .contactMe {
+    grid-column: 1/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .navFooter {
+    grid-column: 1/12;
+    grid-row: 2;
+    text-align: center;
+  }
 }
