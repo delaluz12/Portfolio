@@ -12,6 +12,16 @@ header {
 }
 h1 {
   background-color: powderblue;
+  font-size: 50px;
+}
+h2 {
+  font-size: 40px;
+}
+h4{
+  font-size: 14px;
+}
+.titleTheme p {
+  font-size: 12px;
 }
 .navList{
   grid-column: 5/12;
@@ -31,8 +41,6 @@ h1 {
 .row a, .navFooter a {
   padding: 1rem;
 }
-
-
 .hero {
   background-color:pink;
   height: 25px;
@@ -119,7 +127,7 @@ h1 {
 img {
   border: 5px solid #FFEEF4;
 }
-/* beginning of media queres */
+/* beginning of media query for small screens */
 @media  screen and (max-width: 620px) {
   /* For mobile phones: */
   .name {
@@ -152,7 +160,6 @@ img {
     grid-row:2;
     margin: 1rem;
   }
-
   .work{
     grid-column: 1/12;
     grid-row:1;
@@ -183,7 +190,6 @@ img {
     grid-row:6;
     margin: 1rem;
   }
-
   .contactMe {
     grid-column: 1/12;
     grid-row: 1;
@@ -193,5 +199,192 @@ img {
     grid-column: 1/12;
     grid-row: 2;
     text-align: center;
+  }
+}
+/* beginning of psuedo classes */
+a:hover {
+  background-color: blanchedalmond;
+  border-radius: 50%;
+  opacity: 50%;
+}
+a:active{
+  background-color:#FBFBFB ;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+a:link{
+  color: pink;
+}
+a:visited{
+  color: pink;
+}
+/* beginning medium screen/tablet media query */
+@media  screen and (max-width: 800px ) {
+  /* For mobile phones: */
+  .name {
+    grid-column: 1/12;
+    grid-row: 1;
+  }
+  .navList {
+    grid-column: 2/12;
+    grid-row: 2;
+  }
+  .row a, .navFooter a {
+    display: block;
+  }
+  .row {
+    text-align: center;
+  }
+  .aboutMe {
+    grid-column: 2/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .blurb {
+    grid-column: 2/12;
+    grid-row:3;
+    text-align: center;
+    margin: 1rem;
+  }
+  .blurbPic {
+    grid-column: 4/10;
+    grid-row:2;
+  }
+
+  .work{
+    grid-column: 2/12;
+    grid-row:1;
+    text-align: center;
+  }
+  .mainImg {
+    grid-column: 2/12;
+    grid-row:2;
+    margin: 1rem;
+  }
+  .smallImg {
+    grid-column: 2/12;
+    grid-row:3;
+    margin: 1rem;
+  }
+  .smallImg2 {
+    grid-column: 2/12;
+    grid-row:4;
+    margin: 1rem;
+  }
+  .smallImg3 {
+    grid-column: 2/12;
+    grid-row:5;
+    margin: 1rem;
+  }
+  .smallImg4 {
+    grid-column: 2/12;
+    grid-row:6;
+    margin: 1rem;
+  }
+
+  .contactMe {
+    grid-column: 2/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .navFooter {
+    grid-column: 2/12;
+    grid-row: 2;
+    text-align: center;
+  }
+}
+/* begining media query for large screens */
+@media  screen and (max-width: 1024px ) {
+  /* For mobile phones: */
+  .name {
+    grid-column: 1/12;
+    grid-row: 1;
+  }
+  .navList {
+    grid-column: 2/12;
+    grid-row: 2;
+  }
+  .row a, .navFooter a {
+    display: block;
+  }
+  .row {
+    text-align: center;
+  }
+  .aboutMe {
+    grid-column: 2/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .blurb {
+    grid-column: 2/12;
+    grid-row:3;
+    text-align: center;
+    margin: 1rem;
+  }
+  .blurbPic {
+    grid-column: 4/10;
+    grid-row:2;
+  }
+
+  .work{
+    grid-column: 2/12;
+    grid-row:1;
+    text-align: center;
+  }
+  .mainImg {
+    grid-column: 2/12;
+    grid-row:2;
+    margin: 1rem;
+  }
+  .smallImg {
+    grid-column: 2/12;
+    grid-row:3;
+    margin: 1rem;
+  }
+  .smallImg2 {
+    grid-column: 2/12;
+    grid-row:4;
+    margin: 1rem;
+  }
+  .smallImg3 {
+    grid-column: 2/12;
+    grid-row:5;
+    margin: 1rem;
+  }
+  .smallImg4 {
+    grid-column: 2/12;
+    grid-row:6;
+    margin: 1rem;
+  }
+
+  .contactMe {
+    grid-column: 2/12;
+    grid-row: 1;
+    text-align: center;
+  }
+  .navFooter {
+    grid-column: 2/12;
+    grid-row: 2;
+    text-align: center;
+  }
+}
+/* beginning media query for large screens */
+@media  screen and (min-width: 1025px ) {
+  .aboutMe {
+    grid-column: 1 /4;
+    text-align: right;
+  }
+  .blurb {
+    grid-column: 5/10;
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .blurbPic {
+    grid-column: 10/12;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+   
   }
 }
