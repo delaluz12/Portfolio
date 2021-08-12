@@ -1,6 +1,6 @@
 # Portfolio
 ## Description
-Created a responsive portfolio that includes About Me, Work, and Contact Sections. A resume document can also be downloaded by user if they choose to click on the Resume link in the menu.
+Created a responsive portfolio powered by Materalize CDN Framework and jQuery. Portfolio includes About Me, Work, and Contact Sections. A resume pdf can also be opened by clicking on 'Resume' link in menu. PDF can be downloaded if user wishes to do so.
 
 ## Links
 
