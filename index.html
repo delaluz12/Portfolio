@@ -12,138 +12,220 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6df6b95a29.js" crossorigin="anonymous"></script>
+
+    <!-- materalize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
 
 
 </head>
 
+
+
 <body>
-    <header class="grid-header">
-
-        <h1 class="name">Maria De La Luz Rico</h1>
-
-
-        <nav class="navList ">
-            <div class="row rowRight">
-                <a href="#About Me">About Me</a>
-                <a href="#Work">Work</a>
-                <a href="#Contact Me">Contact Me</a>
-                <a href="./assets/images/RicoMaria_Resume.docx">Resume</a>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo" id='brand-logo'> <i class="valign-wrapper fas fa-atom"></i><i
+                        class="valign-wrapper fas fa-laptop-code"></i><i class="valign-wrapper fas fa-seedling"></i>
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#aboutMe" class="aboutMeBtn">About Me</a></li>
+                    <li><a href="#work" class="workBtn">Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                    <li><a href="./assets/images/RicoMaria_Resume.docx">Resume</a></li>
+                </ul>
             </div>
         </nav>
 
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#aboutMe" class="aboutMeBtn">About Me</a></li>
+            <li><a href="#work" class="workBtn">Work</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+            <li><a href="./assets/images/RicoMaria_Resume.docx">Resume</a></li>
+        </ul>
     </header>
-    <div class="hero"></div>
-    <main>
-        <section class="grid-aboutMe">
-            <h2 id="About Me" class="aboutMe">About Me</span></h2>
-            <div class="blurbPic">
 
-                <a href="https://www.instagram.com/c12vida_/" target="_blank"><img id="avatar"
-                        src="./assets/images/headshot.jpg" alt=""></a>
-            </div>
+    <main class="">
 
-            <p class="blurb">Hello! My name is Maria De La Luz but you can call me Maria. In industry that is what I go
-                by, meanwhile my family knows me as Lucero or Luz which means bright-star&#128171; for the former and
-                light☀️ for the latter in Spanish; so my name in English translates to Maria of the Light. I was born in
-                San Luis Potosi, Mexico but I grew up in Northeast Minneapolis. Spanish is my first language even though
-                I have the BIGGEST Minnesotan accent. ⚛️FUN FACT: I have been listening to STEM lectures, in particular
-                Chemistry, since before I was born - my mom studied in the STEM field while she was pregnant with me. My
-                love for the STEM fields is what lead to me to explore the Life Sciences and become a Chemist🥼. I've
-                been able to conduct research utilizing microwave reactors to optimize the Fischer Indole Synthesis; a
-                chemical reaction that produces an Indole which is the backbone to my favorite neurotransmitter -
-                Serotonin! This experience introduced me to the field of Bio-Chemistry and opened up the door for me to
-                conduct research in the Chemistry department at the University of Minnesota-Twin Cities synthesizing⚗️ a
-                small-molecule inhibitor to probe BPTF binding interactions via photocrosslinking. After taking a detour
-                post-graduation to work for the Minnesota Technology Association I realized that I want to apply the
-                "Technology" sector of STEM to the Life Science Industry. Ultimately those experiences lead me to start
-                working at BioTechne as a Research Associate in the antibody purification department and join this
-                bootcamp. This brings me to my second 🧪FUN FACT: prior to joining the Full-Stack bootcamp I was
-                purifying subunit 1 of the SARS-CoV-2 antibody. <br>
-                <br> I have moved on from lab back to administration. Currently I get to credential all of the Medical
-                Doctors, Physician Assistants and Nurse Practitioners at the Minneapolis Heart Institute.
-                Aside from my involvement in the STEM industry. I have many different hobbies and interests ranging from
-                drawing and photography to attempting to build my own spectrometer for horticulture purposes and brewing
-                kombucha. My life companion, ride or die, partner-in-crime, and fur-baby is named CaLu - unfortunately
-                she's not named after the elements, Calcium & Lutetium - she is named after me (Lucero/Luz) and my
-                ex-husband. Plants are a big part of my life. Currently I have over 50 different species of plants. My
-                prized plants are two Plumerias and a Dendrobium orchid I brought back from Hawaii last year. If you
-                want to talk plants ➡️ <a class="HMU" href="https://www.instagram.com/c12vida_/" target="_blank">
-                    @c12vida_</a>. I'm always looking to learn new tips/tools to take care of my plant babies 🌱🌱 and
-                also share what I have learned. As I work on developing projects through this course feel free to enjoy my photography work, under the "Work" section, as place holders for project cards.
-            </p>
-        </section>
-        <section class="grid-work">
-            <h2 id="Work" class="work">Work <span class="line"></span></h2>
+        <!-- About Me Container -->
+        <div class="container" id="aboutmeContainer">
+            <div class="row">
+                <div class="col l6 push-l3 m10 s12">
+                    <!-- new about me -->
+                    <div class="card" id="aboutmeCard">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="./assets/images/headshot.jpg" width="240">
+                            <span class="card-title activator">Galveston Beach, TX</span>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4" id="aboutMe">About Me<i
+                                    class="right fas fa-atom"></i></span>
+                            <p><a href="#" class="workBtn">Check out my work</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Hello 🌎<i
+                                    class="material-icons right">close</i></span>
+                            <p>I am Maria De La Luz.</p>
+                            <p>I am looking to merge my background and skillsets with those in technology and
+                                environmental
+                                sectors, including; but not limited to web development and permaculture. Transitioning
+                                from
+                                diligent Research Associate to creative and dependable Entry Level Web Developer. My
+                                professional background is well-versed in various industries including; biotechnology,
+                                life
+                                sciences, R&D, law, customer service, administration and support services.</p>
+                            <p>Throught my site you will find links and access points to my work in Full-Stack Web
+                                Development as well as my resume with other professional experience. In addition to my
+                                work, you will also find ways to connect with me. Please do not hestiate to reach out.
+                            </p>
+                            <p>The cutie pie in the picture with me is my fur-baby CaLu - she's a boxer/terrier mix 🐶.
+                                She cries with excitment when approacing a Starbucks because she knows: Starbucks =
+                                pupcup 🍦</p>
+                        </div>
+                    </div>
+                    <!-- about me --menu -->
+                    <div class="card" id="aboutmeCardMenu">
+                        <div class="card-image">
+                          <img src="./assets/images/plumeriaCrop.jpg">
+                          <span class="card-title ">Card Title</span>
+                        </div>
+                        <div class="card-content aboutmeMenu">
+                            <p>I am Maria De La Luz.</p>
+                            <p>I am looking to merge my background and skillsets with those in technology and
+                                environmental
+                                sectors, including; but not limited to web development and permaculture. Transitioning
+                                from
+                                diligent Research Associate to creative and dependable Entry Level Web Developer. My
+                                professional background is well-versed in various industries including; biotechnology,
+                                life
+                                sciences, R&D, law, customer service, administration and support services.</p>
+                            <p>Throught my site you will find links and access points to my work in Full-Stack Web
+                                Development as well as my resume with other professional experience. In addition to my
+                                work, you will also find ways to connect with me. Please do not hestiate to reach out.
+                            </p>
+                            <p>The cutie pie in the picture with me is my fur-baby CaLu - she's a boxer/terrier mix 🐶.
+                                She cries with excitment when approacing a Starbucks because she knows: Starbucks =
+                                pupcup 🍦</p>
+                        </div>
+                        
+                      </div>
+                    
+                </div>
 
-            <div class="mainImg">
-                <div class="titleTheme ">
-                    <h4>Hawaii</h4>
-                    <p>Plumeria</p>
-                </div>
-                <a href="https://lightroom.adobe.com/libraries/e3fea0abe4de484887b1a5928c9e96b4/albums/225fb226bf214313a8eb181df671de9a/assets?tab=photos&panel=share"
-                    target="_blank"><img id="firstProject" src="./assets/images/plumeria.jpg"
-                        alt="project1"></a>
             </div>
-            <div class="smallImg">
-                <div class="titleTheme ">
-                    <h4>Hawaii</h4>
-                    <p>Bird of Paradise</p>
+        </div>
+        <!-- Work Container -->
+        <div class="container" id='workContainer'>
+            <div class="row" id="work">
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/actGen.jpg">
+                            <span class="card-title card-title-style">ActGen</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light "
+                                href="https://delaluz12.github.io/ActGen/" target="_blank"><i
+                                    class="material-icons playIcon">play_circle_outline</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p><a class="" href="https://delaluz12.github.io/ActGen/" target="_blank"> <i
+                                        class="fab fa-github"></i> ActGen Project Repo</a></p>
+                            <p>A fun activity generating application</p>
+                        </div>
+                    </div>
                 </div>
-                <a
-                    href="https://lightroom.adobe.com/libraries/e3fea0abe4de484887b1a5928c9e96b4/albums/225fb226bf214313a8eb181df671de9a/assets?tab=photos&panel=share" target="_blank"><img
-                        id="secondProject" src="./assets/images/birdofparadise.jpg"
-                        alt="project2"></a>
-            </div>
-            <div class="smallImg2">
-                <div class="titleTheme ">
-                    <h4>Hawaii</h4>
-                    <p>Beach</p>
+
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/planner.jpg">
+                            <span class="card-title card-title-style">Day Scheduler</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light "
+                                href="https://delaluz12.github.io/Day-Scheduler/" target="_blank"><i
+                                    class="material-icons playIcon">play_circle_outline</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p><a class="" href="https://github.com/delaluz12/Day-Scheduler" target="_blank"> <i
+                                        class="fab fa-github"></i> Day Scheduler Project Repo</a></p>
+                            <p>An easy to use daily planner</p>
+                        </div>
+                    </div>
                 </div>
-                <a
-                    href="https://lightroom.adobe.com/libraries/e3fea0abe4de484887b1a5928c9e96b4/albums/225fb226bf214313a8eb181df671de9a/assets?tab=photos&panel=share"target="_blank"><img
-                        id="thirdProject" src="./assets/images/hawaii.jpg" target="_blank"
-                        alt="project3"></a>
-            </div>
-            <div class="smallImg3">
-                <div class="titleTheme ">
-                    <h4>The FIRM</h4>
-                    <p>Murph 2019</p>
+
+                <div class="col s12 m6 l4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/weather.jpg">
+                            <span class="card-title card-title-style">Weather Dashboard</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light "
+                                href="https://delaluz12.github.io/Weather-Dashboard/" target="_blank"><i
+                                    class="material-icons playIcon">play_circle_outline</i></a>
+                        </div>
+                        <div class="card-content">
+                            <p><a class="" href="https://github.com/delaluz12/Weather-Dashboard" target="_blank"> <i
+                                        class="fab fa-github"></i> Weather Dashboard Project Repo</a></p>
+                            <p>A useful weather dashboard app for desktop</p>
+                        </div>
+                    </div>
                 </div>
-                <a
-                    href="https://lightroom.adobe.com/libraries/e3fea0abe4de484887b1a5928c9e96b4/albums/a2440b5fbd29412da624b03c0ee4e8c3/assets?panel=share&tab=photos"target="_blank"><img
-                        id="fourthProject" src="./assets/images/murphy2019.jpg" target="_blank"
-                        alt="project4"></a>
             </div>
-            <div class="smallImg4">
-                <div class="titleTheme">
-                    <h4>Road Trip</h4>
-                    <p>Oklahoma</p>
-                </div>
-                <a
-                    href="https://lightroom.adobe.com/libraries/e3fea0abe4de484887b1a5928c9e96b4/albums/d109ab17ccb541d6a326048aad72ae19/assets?tab=photos&panel=share"target="_blank"><img
-                        id="fifthProject" src="./assets/images/girls.jpg" target="_blank"
-                        alt="project5"></a>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <div class="grid-footer">
-            <h2 id="Contact Me" class="contactMe">
-                Contact Me
 
-            </h2>
 
-            <nav class="navFooter">
-                <div class="row rowCenter">
-                    <a href="tel:+555-555-6555">555-555-6555</a>
-                    <a href="mailto:c12vida@gmail.com" target="_blank">c12vida@gmail.com</a>
-                    <a href="https://github.com/delaluz12" target="_blank"> GitHub</a>
-                    <a href="https://www.instagram.com/c12vida_/" target="_blank">Instagram</a>
-                    <a href="https://open.spotify.com/user/aztecprincess12" target="_blank">Spotify</a>
+    <!-- footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row" id="contactMe">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Contact Me</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3 " href="tel:+715-503-0105"><i class="fas fa-phone-square-alt fa-2x"></i></a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:c12vida@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/mariadllrm/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    </ul>
+
                 </div>
-            </nav>
+                <div class="col l4 offset-l2 s12">
+                    <div class="row">
+                        <h5>Get to know me</h5>
+                        <h6 class="white-text"><a class="grey-text text-lighten-4" href="https://github.com/delaluz12"
+                                target="_blank"> <i class="fab fa-github"></i> delaluz12</a></h6>
+                        <h6 class="white-text"><a class="grey-text text-lighten-4"
+                                href="https://open.spotify.com/user/aztecprincess12" target="_blank"> <i
+                                    class="fab fa-spotify"></i> spotify</a></h6>
+                        <h6 class="white-text"><a class="grey-text text-lighten-4"
+                                href="https://www.instagram.com/c12vida_/" target="_blank"> <i
+                                    class="fab fa-instagram"></i> c12vida_</a></h6>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2021 delaluz12
+
+            </div>
         </div>
     </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- myScript -->
+    <script src="./assets/script.js"></script>
 </body>
+
 
 </html>
