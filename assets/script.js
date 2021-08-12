@@ -2,6 +2,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 
     $('#workContainer').hide();
+    $('#aboutmeCardMenu').hide();
 
     $('.workBtn').on('click',()=>{
         $('#aboutmeContainer').hide();
@@ -13,6 +14,7 @@ $(document).ready(function(){
         $('#workContainer').hide();
         $('#aboutmeCard').hide();
         $('#aboutmeContainer').show();
+        $('#aboutmeCardMenu').show();
     })
 
   });

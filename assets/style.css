@@ -26,4 +26,18 @@ body {
 }
 .aboutmeMenu p{
     padding-bottom: 1rem;
+    
 }
+.textStyle p{
+    font-family: 'Raleway', sans-serif;
+}
+.textStyle{
+    font-family: 'Raleway', sans-serif;
+}
+#aboutMe {
+    font-family: 'Lobster', cursive;
+}
+.footerStyle{
+    padding-top: 0;
+}
+
